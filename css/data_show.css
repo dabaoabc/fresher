@@ -1,0 +1,247 @@
+.info{
+     width: 921px;
+     height: 593px;
+     background: url("../images/info_bg.png");
+     border: 0;
+ }
+#big_data{
+    background: url("../images/big_data_bg.png") no-repeat;
+}
+.header_data ul li {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 8px 10px 0 10px;
+    color: #ff6f30;
+    font-size: 20px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.hover{
+    background: #ff6f30;
+    color: #ffffff !important;
+}
+.header_data {
+    text-align: center;
+}
+#roommate,#classmate,#teacher,#interest,#hometown,#people,#birth,#difficulty,#graduate{
+    margin-top: 7px;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #ff6f30;*/
+    /*背景颜色去掉即可*/
+}
+
+/*刘文栖的css*/
+   /*到时候你把这些css代码给我就行了*/
+
+#classmate ,#teacher ,#interest {
+    position: relative;
+}
+.p2 {
+    font-size: 0;
+    color: #6c1815;
+}
+.p2 span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 37px;
+    text-align: center;
+}
+.p3 {
+    font-size: 0;
+}
+.p3 span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+}
+.first-column {
+    width: 42px;
+    margin-left: 34px;
+}
+.second-column {
+    width: 33px;
+    margin-left: 45px;
+}
+.third-column {
+    width: 88px;
+    margin-left: 85px;
+}
+.fourth-column {
+    width: 70px;
+    margin-left: 100px;
+}
+.fifth-column {
+    width: 33px;
+    margin-left: 80px;
+}
+.sixth-column {
+    width: 88px;
+    margin-left: 60px;
+}
+.seventh-column {
+    width: 82px;
+    margin-left: 50px;
+}
+.p3 {
+    padding-top: 1px;
+    color: #6c1815;
+}
+.p3-third {
+    padding-top: 2px;
+}
+.friends-teacher a {
+    display: inline-block;
+    width: 181px;
+    text-align: center;
+    margin: 40px 0 0 38px;
+    color: #5db9aa;
+    cursor: pointer;
+}
+.friends-teacher a:hover {
+    color: #ff6f30;
+}
+.friends-teacher a:hover>img{
+    border-color: #ff6f30;
+}
+.friends-teacher a img {
+    width: 161px;
+    height: 120px;
+    border: 20px solid #5db9aa;
+    border-right-width: 7px;
+    border-left-width: 7px;
+}
+.friends-special {
+    position: relative;
+    top: 22px;
+}
+.pageGro {
+    position: absolute;
+    bottom: 9px;
+    width: 400px;
+    height: 25px;
+    margin: 0px auto;
+    padding-top: 30px;
+    margin-left: 36%;
+}
+.pageList {
+    margin-left: 10px;
+}
+.pageList ul {
+    padding: 0;
+    margin: 0;
+}
+.pageGro div {
+    float: left;
+    line-height: 25px;
+}
+.pageGro div ul li {
+    float: left;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+.pageGro div ul li {
+    list-style: none;
+    width: 26px;
+    color: #fff;
+    text-align: center;
+    background: #ff6f30;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pageGro div ul li.on {
+    list-style: none;
+    background: #64c8b8;
+    cursor: pointer;
+}
+.pageGro .pageUp,.pageGro .pageDown {
+    width: 26px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+.pageGro .pageUp {
+    background: url("../images/info_left.png") 50% 50% no-repeat;
+}
+.pageGro .pageDown {
+    margin-left: 20px;
+    background: url("../images/info_right.png") 50% 50% no-repeat;
+}
+
+
+/*莫小君的css*/
+#hometown,#people,#birth,#difficulty{
+    position: relative;
+}
+#difficult{
+    margin-top: -20px;
+}
+.title{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #692d0f;
+}
+.home{
+    width: 931px;
+    height: 400px;
+    margin-top: -70px;
+}
+.half{
+    width: 455px;
+    display: inline-block;
+    background: #eeeeee;
+}
+.share{
+    position: absolute;
+    bottom: 124px;
+    left: 24%;
+}
+.share a{
+    display: inline-block;
+    margin-left: 10px;
+    width: 165px;
+    height: 45px;
+    background: url("../images/share_btn.png");
+}
+.share a img{
+    margin: 10px 20px;
+    float: left;
+}
+.share a span{
+    line-height: 45px;
+    color: #ffffff;
+}
+#graduation{
+    height: 180px;
+}
+#graduations{
+    height: 280px;
+}
+#graduate h1{
+    text-align: left;
+    padding-top: 10px;
+    color: #6c1815;
+    font-size: 14px;
+    font-weight: bolder;
+    text-indent: 30px;
+    line-height: 30px;
+}
+.ben{
+    font-size: 14px;
+    color: #6c1815;
+    font-weight:bolder;
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 30px;
+
+}

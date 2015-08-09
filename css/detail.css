@@ -1,0 +1,103 @@
+.login_det{
+    width: 450px;
+    height: 460px;
+    z-index: 998;
+    display: none;
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*-ms-border-radius: 5px;*/
+    /*-o-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+    background: url("../images/detail_bg.png");
+    font-size: 14px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.login_det h2{
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+.login_det label{
+    margin-left: 50px;
+    color: #0088a6;
+}
+.login_det input{
+    border: 0;
+    width: 240px;
+    margin-left: 10px;
+    padding: 10px;
+    transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+label{
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#password_det{
+    margin-left: 14px;
+}
+.login_det span{
+    font-size: 12px;
+    color: #c5c5c5;
+}
+#submit_det,#cancle_det{
+    margin: 20px 0 0 20px;
+    background: url("../images/overlook.png");
+    width: 158px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+#cancle_det{
+    margin: 20px 0 0 57px;
+    text-align: center;
+    font-size: 16px;
+}
+#submit_det{
+    /*margin: 20px 0 0 20px;*/
+    text-align: center;
+    font-size: 16px;
+}
+.login_det #submit_det:hover{
+    background: url("../images/overlook_bg.png");
+}
+.login_det #cancle_det:hover{
+    background: url("../images/Login.png");
+}
+.labels{
+    width: 336px;
+    margin: 10px auto 0;
+    text-align: center;
+}
+.labels span{
+    padding: 9px 0px;
+    width: 64px;
+    text-align: center;
+    background: #5cb3dc;
+    font-size: 16px;
+    display: inline-block;
+    margin:10px 9px;
+    color: #ffffff;
+    background: #5cb3dc;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.labels .labels_click{
+    background: #ff8636;
+}

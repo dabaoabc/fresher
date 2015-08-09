@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_map.css">
+    <link rel="stylesheet" href="css/data_show.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="js/pageGroup.js"></script>
+    <script src="js/page.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="header_wrap">
+        <a href="welcome.html"><img class="cqupt_logo" src="images/cqupt_logo.png"></a>
+        <ul class="header_nav" id="go_page">
+            <li id="index" class=""><a href="welcome.html">首页</a></li>
+            <li id="map" class=""><a href="map.html">重邮地图</a></li>
+            <li id="data_show" class="click"><a href="javascript:void(0)">数据展示</a></li>
+            <li id="subject" class=""><a href="cqupt_info.html">重邮百科</a></li>
+            <li id="student" class=""><a href="graceful.html">邮子风采</a></li>
+            <li id="hiii" class=""><a href="javascript:void(0)">大声HI</a></li>
+            <li id="aboutRedRock" class=""><a href="javascript:void(0)">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+<div class="map_content">
+    <div class="wrap">
+        <div class="banner_map">
+            <img src="images/banner_map.png">
+        </div>
+        <div class="cqupt_map">
+            <h1><img src="images/big_data_head.png"></h1>
+            <div class="cqupt_mapcontent">
+                <h1>
+                    <span>找朋友</span>
+                    <span>大数据</span>
+                </h1>
+                <div class="schoolmap info" id="friends">
+                    <div class="header_data">
+                        <ul>
+                            <li>找室友</li>
+                            <li>找同学</li>
+                            <li>找辅导员</li>
+                            <li>找志同道合</li>
+                        </ul>
+                    </div>
+                    <div id="roommate">
+                        <p class="p2">
+                            <span class="first-column">姓名</span>
+                            <span class="second-column">性别</span>
+                            <span class="third-column">学院</span>
+                            <span class="fourth-column">专业</span>
+                            <span class="fifth-column">籍贯</span>
+                            <span class="sixth-column">手机号码</span>
+                            <span class="seventh-column">QQ</span>
+                        </p>
+                        <p class="p3 p3-third">
+                            <span class="first-column">张三</span>
+                            <span class="second-column">男</span>
+                            <span class="third-column">传媒艺术学院</span>
+                            <span class="fourth-column">艺术设计类</span>
+                            <span class="fifth-column">重庆</span>
+                            <span class="sixth-column">18883991211</span>
+                            <span class="seventh-column">58887888</span>
+                        </p>
+                        <p class="p3">
+                            <span class="first-column">李四</span>
+                            <span class="second-column">男</span>
+                            <span class="third-column">传媒艺术学院</span>
+                            <span class="fourth-column">艺术设计类</span>
+                            <span class="fifth-column">河南</span>
+                            <span class="sixth-column">18973995555</span>
+                            <span class="seventh-column">78945612</span>
+                        </p>
+                        <p class="p3">
+                            <span class="first-column">陈小明</span>
+                            <span class="second-column">男</span>
+                            <span class="third-column">传媒艺术学院</span>
+                            <span class="fourth-column">艺术设计类</span>
+                            <span class="fifth-column">广东</span>
+                            <span class="sixth-column">暂无信息</span>
+                            <span class="seventh-column">1023456789</span>
+                        </p>
+                        <p class="p3">
+                            <span class="first-column">王大强</span>
+                            <span class="second-column">男</span>
+                            <span class="third-column">传媒艺术学院</span>
+                            <span class="fourth-column">艺术设计类</span>
+                            <span class="fifth-column">云南</span>
+                            <span class="sixth-column">暂无信息</span>
+                            <span class="seventh-column">暂无信息</span>
+                        </p>
+                        <p class="p3">
+                            <span class="first-column">张三</span>
+                            <span class="second-column">男</span>
+                            <span class="third-column">传媒艺术学院</span>
+                            <span class="fourth-column">艺术设计类</span>
+                            <span class="fifth-column">重庆</span>
+                            <span class="sixth-column">暂无信息</span>
+                            <span class="seventh-column">暂无信息</span>
+                        </p>
+                    </div>
+                    <div id="classmate">
+                        <div class="friends-classmate">
+                            <p class="p2">
+                                <span class="first-column">姓名</span>
+                                <span class="second-column">性别</span>
+                                <span class="third-column">学院</span>
+                                <span class="fourth-column">专业</span>
+                                <span class="fifth-column">籍贯</span>
+                                <span class="sixth-column">手机号码</span>
+                                <span class="seventh-column">QQ</span>
+                            </p>
+                            <p class="p3 p3-third">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">18883991211</span>
+                                <span class="seventh-column">58887888</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">李四</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">河南</span>
+                                <span class="sixth-column">18973995555</span>
+                                <span class="seventh-column">78945612</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">陈小明</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">广东</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">1023456789</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">李四</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">河南</span>
+                                <span class="sixth-column">18973995555</span>
+                                <span class="seventh-column">78945612</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">陈小明</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">广东</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">1023456789</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div id="teacher">
+                        <div class="friends-teacher">
+                            <a href="images/wks.png"><img src="images/wks.png"><span>传媒艺术学院 - 吴扩绍</span></a>
+                            <a href="images/wq.png"><img src="images/wq.png"><span>传媒艺术学院 - 吴倩</span></a>
+                            <a href="images/zdm.png"><img src="images/zdm.png"><span>光电工程学院 - 张冬梅</span></a>
+                            <a href="images/cjs.png" class="friends-special"><img src="images/cjs.png"><span>计算机科学与技术学院 - 陈劲松</span></a>
+                            <a href="images/cy.png"><img src="images/cy.png"><span>体育学院 - 程瑶</span></a>
+                            <a href="images/zd.png"><img src="images/zd.png"><span>法学院 - 张丹</span></a>
+                            <a href="images/hdc.png"><img src="images/hdc.png"><span>软件工程学院 - 郝东超</span></a>
+                            <a href="images/lb.png"><img src="images/lb.png"><span>经济管理学院 - 卢斌</span></a>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div id="interest">
+                        <div class="friends-interest">
+                            <p class="p2">
+                                <span class="first-column">姓名</span>
+                                <span class="second-column">性别</span>
+                                <span class="third-column">学院</span>
+                                <span class="fourth-column">专业</span>
+                                <span class="fifth-column">籍贯</span>
+                                <span class="sixth-column">手机号码</span>
+                                <span class="seventh-column">QQ</span>
+                            </p>
+                            <p class="p3 p3-third">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">18883991211</span>
+                                <span class="seventh-column">58887888</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">李四</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">河南</span>
+                                <span class="sixth-column">18973995555</span>
+                                <span class="seventh-column">78945612</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">陈小明</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">广东</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">1023456789</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">李四</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">河南</span>
+                                <span class="sixth-column">18973995555</span>
+                                <span class="seventh-column">78945612</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">陈小明</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">广东</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">1023456789</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">张三</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">重庆</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                            <p class="p3">
+                                <span class="first-column">王大强</span>
+                                <span class="second-column">男</span>
+                                <span class="third-column">传媒艺术学院</span>
+                                <span class="fourth-column">艺术设计类</span>
+                                <span class="fifth-column">云南</span>
+                                <span class="sixth-column">暂无信息</span>
+                                <span class="seventh-column">暂无信息</span>
+                            </p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schoolmap real info" id="big_data">
+                    <div class="header_data">
+                        <ul>
+                            <li>同乡比例</li>
+                            <li>男女比例</li>
+                            <li>同年同月</li>
+                            <li>最难科目</li>
+                            <li>毕业去向数据</li>
+                        </ul>
+                    </div>
+                    <div id="hometown">
+                        <p class="title">在重邮，你的老乡人数占全校人数的比例为<span>10%</span>哦~</p>
+                        <div id="home" class="home"></div>
+                        <div class="share">
+                            <a href="javascript:void((function(s,d,e,r,l,p,t,z,c) {var%20f='http://v.t.sina.com.cn/share/share.php?appkey=962772401',u=z||d.location,p=['&url=',e(u),'& title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'& content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a() {if(!window.open([f,p].join(''),'mb', ['toolbar=0,status=0,resizable=1,width=600,height=500,left=',(s.width- 600)/2,',top=',(s.height-600)/2].join('')))u.href=[f,p].join('');}; if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();}) (screen,document,encodeURIComponent,'','','www.leziyou.com(如果此处为空会取当前页面网址)','在重邮，我的老乡人数占全校人数的比例为10%哦~','','utf-8'));" >
+                                <img src="images/sina.png">
+                                <span>分享到微博</span>
+                            </a>
+                            <a href="javascript:void(0)" onclick="cannot()">
+                                <img src="images/wechat.png">
+                                <span>分享到微信</span>
+                            </a>
+                            <a target="_black" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hongyan.cqupt.edu.cn/welcome/2014/&desc=在重邮，我的老乡人数占全校人数的比例为10%哦~&title=在重邮，我的老乡人数占全校人数的比例为10%哦&pics=http://hongyan.cqupt.edu.cn/welcome/2014/">
+                                <img src="images/zone.png">
+                                <span>分享到空间</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="people" >
+                        <p class="title">你所在学院以及学校的男女比例为</p>
+                        <div id="boy_girl_school" class="home half"></div>
+                        <div id="boy_girl" class="home half"></div>
+                        <div class="share">
+                            <a href="javascript:void((function(s,d,e,r,l,p,t,z,c) {var%20f='http://v.t.sina.com.cn/share/share.php?appkey=962772401',u=z||d.location,p=['&url=',e(u),'& title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'& content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a() {if(!window.open([f,p].join(''),'mb', ['toolbar=0,status=0,resizable=1,width=600,height=500,left=',(s.width- 600)/2,',top=',(s.height-600)/2].join('')))u.href=[f,p].join('');}; if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();}) (screen,document,encodeURIComponent,'','','www.leziyou.com(如果此处为空会取当前页面网址)','在重邮，我的老乡人数占全校人数的比例为10%哦~','','utf-8'));" >
+                                <img src="images/sina.png">
+                                <span>分享到微博</span>
+                            </a>
+                            <a href="javascript:void(0)" onclick="cannot()">
+                                <img src="images/wechat.png">
+                                <span>分享到微信</span>
+                            </a>
+                            <a target="_black" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hongyan.cqupt.edu.cn/welcome/2014/&desc=在重邮，我的老乡人数占全校人数的比例为10%哦~&title=在重邮，我的老乡人数占全校人数的比例为10%哦&pics=http://hongyan.cqupt.edu.cn/welcome/2014/">
+                                <img src="images/zone.png">
+                                <span>分享到空间</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="birth">
+                        <p class="title">学校里与你同年同月的比例以及与你同星座的比例为</p>
+                        <div id="birthday" class="home half"></div>
+                        <div id="constellation" class="home half"></div>
+                        <div class="share">
+                            <a href="javascript:void((function(s,d,e,r,l,p,t,z,c) {var%20f='http://v.t.sina.com.cn/share/share.php?appkey=962772401',u=z||d.location,p=['&url=',e(u),'& title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'& content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a() {if(!window.open([f,p].join(''),'mb', ['toolbar=0,status=0,resizable=1,width=600,height=500,left=',(s.width- 600)/2,',top=',(s.height-600)/2].join('')))u.href=[f,p].join('');}; if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();}) (screen,document,encodeURIComponent,'','','www.leziyou.com(如果此处为空会取当前页面网址)','在重邮，我的老乡人数占全校人数的比例为10%哦~','','utf-8'));" >
+                                <img src="images/sina.png">
+                                <span>分享到微博</span>
+                            </a>
+                            <a href="javascript:void(0)" onclick="cannot()">
+                                <img src="images/wechat.png">
+                                <span>分享到微信</span>
+                            </a>
+                            <a target="_black" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://hongyan.cqupt.edu.cn/welcome/2014/&desc=在重邮，我的老乡人数占全校人数的比例为10%哦~&title=在重邮，我的老乡人数占全校人数的比例为10%哦&pics=http://hongyan.cqupt.edu.cn/welcome/2014/">
+                                <img src="images/zone.png">
+                                <span>分享到空间</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="difficulty">
+                        <p class="title">各学院学生心中的最难科目</p>
+                        <div id="difficult" class="home"></div>
+
+                        <!--<div class="share">-->
+                            <!--<a href="#">-->
+                                <!--<img src="images/sina.png">-->
+                                <!--<span>分享到微博</span>-->
+                            <!--</a>-->
+                            <!--<a href="#">-->
+                                <!--<img src="images/wechat.png">-->
+                                <!--<span>分享到微信</span>-->
+                            <!--</a>-->
+                            <!--<a href="#">-->
+                                <!--<img src="images/zone.png">-->
+                                <!--<span>分享到空间</span>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    </div>
+                    <div id="graduate">
+                        <h1>●全校本科生就业率情况</h1>
+                        <p class="ben">截止2014年12月10日，2014届本科毕业生总人数为4834人，其中签就业协议有3826人，升学出国有772人，灵活就业有49人，待就业有187人，就业率为96.13%。</p>
+                        <!--<p class="title">各学院学生心中的最难科目</p>-->
+                        <div id="graduation" class="home"></div>
+                        <h1>●本学院各专业就业率情况</h1>
+                        <p class="ben">自动化学院测控技术与仪器专业升学出国率为12.33%，灵活就业率为0.00%，待就业率2.74%，就业率97.26%。</p>
+                        <div id="graduations" class="home"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="top" id="top"><a href="javascript:void(0)"><img src="images/top.png"></a></div>
+</div>
+<div id="footer">
+    <div class="footer_nav clear">
+        <ul>
+            <li><a href="/aboutus">关于红岩网校</a></li>
+            <li>|</li>
+            <li><a href="/web">网站地图</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);">指出错误</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);">管理入口</a></li>
+            <li>|</li>
+        </ul>
+    </div>
+    <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+    <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内）400065 E-mail:redrock@cqupt.edu.cn(023-62461084)</p>
+</div>
+<script>
+    $(function(){
+        $(".cqupt_mapcontent span:eq(0)").click(function(){
+            $(this).addClass("span_bg").siblings().removeClass("span_bg");
+            $("#friends").css("display","block").siblings("div").css("display","none");
+        });
+        $(".cqupt_mapcontent span:eq(1)").click(function(){
+            $(this).addClass("span_bg").siblings().removeClass("span_bg");
+            $("#big_data").css("display","block").siblings("div").css("display","none");
+        });
+        $(".cqupt_mapcontent span:eq(0)").click();
+        $(".header_data").find("ul li").click(function(){
+            $(this).addClass("hover").siblings().removeClass("hover");
+            var a = $(this).index()+1;
+            //alert(a);
+            $("#friends").children("div:eq("+a+")").css("display","block").siblings("div:not(.header_data)").css("display","none");
+            $("#big_data").children("div:eq("+a+")").css("display","block").siblings("div:not(.header_data)").css("display","none");
+        });
+        $(".header_data").find("ul li:eq(0)").click();
+    })
+    function cannot(){
+        alert("暂不支持分享到微信");
+    }
+</script>
+</body>
+</html>

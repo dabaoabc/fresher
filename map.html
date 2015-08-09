@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重邮地图</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_map.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <!--<script src="js/welcome.js"></script>-->
+    <script src="js/drag.js"></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=DZLBZ-JOYH3-O663M-3RCEH-QK5YJ-ZMBI7"></script>
+    <script src="js/streetScene.js"></script>
+</head>
+<body onLoad="init();">
+    <div class="header">
+        <div class="header_wrap">
+            <a href="welcome.html"><img class="cqupt_logo" src="images/cqupt_logo.png"></a>
+            <ul class="header_nav" id="go_page">
+                <li id="index" class=""><a href="welcome.html">首页</a></li>
+                <li id="map" class="click"><a href="javascript:void(0)">重邮地图</a></li>
+                <li id="data_show" class=""><a href="data_show.html">数据展示</a></li>
+                <li id="subject" class=""><a href="cqupt_info.html">重邮百科</a></li>
+                <li id="student" class=""><a href="graceful.html">邮子风采</a></li>
+                <li id="hiii" class=""><a href="javascript:void(0)">大声HI</a></li>
+                <li id="aboutRedRock" class=""><a href="javascript:void(0)">关于我们</a></li>
+                <!--<li id="Login" class=""><a href="javascript:void(0)">登陆</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="map_content">
+        <div class="wrap">
+            <div class="banner_map">
+                <img src="images/banner_map.png">
+            </div>
+            <div class="cqupt_map">
+                <h1><img src="images/map_head.png"></h1>
+                <div class="cqupt_mapcontent">
+                    <h1>
+                        <span>2D地图</span>
+                        <span>街景地图</span>
+                    </h1>
+                    <div class="schoolmap" id="schoolmap">
+                        <div id="drag"></div>
+                        <div class="small_map">
+                            <div id="small_drag"></div>
+                            <div class="schoolSmall" ></div>
+                        </div>
+                    </div>
+                    <div class="schoolmap real" id="pano_container">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="top" id="top"><a href="javascript:void(0)"><img src="images/top.png"></a></div>
+    </div>
+    <div id="footer">
+        <div class="footer_nav clear">
+            <ul>
+                <li><a href="/aboutus">关于红岩网校</a></li>
+                <li>|</li>
+                <li><a href="/web">网站地图</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);">指出错误</a></li>
+                <li>|</li>
+                <li><a href="javascript:void(0);">管理入口</a></li>
+                <li>|</li>
+            </ul>
+        </div>
+        <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+        <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内）400065 E-mail:redrock@cqupt.edu.cn(023-62461084)</p>
+    </div>
+</body>
+</html>

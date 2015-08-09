@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_map.css">
+    <link rel="stylesheet" href="css/style_info1.css">
+    <script src="js/jquery-1.11.2.js"></script>
+
+    <script src="js/welcome.js"></script>
+    <script src="js/pageGroup.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="header_wrap">
+        <a href="welcome.html"><img class="cqupt_logo" src="images/cqupt_logo.png"></a>
+        <ul class="header_nav" id="go_page">
+            <li id="index" class=""><a href="welcome.html">首页</a></li>
+            <li id="map" class=""><a href="map.html">重邮地图</a></li>
+            <li id="data_show" class=""><a href="data_show.html">数据展示</a></li>
+            <li id="subject" class="click"><a href="javascript:void(0)">重邮百科</a></li>
+            <li id="student" class=""><a href="graceful.html">邮子风采</a></li>
+            <li id="hiii" class=""><a href="javascript:void(0)">大声HI</a></li>
+            <li id="aboutRedRock" class=""><a href="javascript:void(0)">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+<div class="map_content">
+    <div class="wrap">
+        <div class="banner_map">
+            <img src="images/banner_map.png">
+        </div>
+        <div class="cqupt_map">
+            <h1><img src="images/cqupt_info.png"></h1>
+            <div class="cqupt_mapcontent">
+                <h1>
+                    <span>新生攻略</span>
+                    <span>学校组织</span>
+                </h1>
+                <div class="schoolmap real-test info" id="schoolmap">
+                    <p class="p1">
+                        <span class="first-btn">入学须知</span>
+                        <span class="info-btn">群号信息</span>
+                        <span class="info-btn">乘车路线</span>
+                        <span class="info-btn special">校车</span>
+                        <span class="info-btn">宿舍情况</span>
+                        <span class="info-btn">衣食住行</span>
+                    </p>
+                    <div class="info-div1 notice">
+                        <div class="notice-info notice-close">
+                            <p class="p2">&ensp;&ensp;&ensp;&ensp;(1)&ensp;报到时间：本科新生应于2015年9月日报到。所有2015级新生入学时均需持我校新生录取通知书、高考准考证及身份证三</p>
+                            <p class="p3 p3-second">证入学报到，三证不全者，不予报到。新生应按规定时间到校报到，不得迟到，因故不能按期入学者，应向学校请假。未请假或者</p>
+                            <p class="p3 p3-third">请假逾期者，除因不可抗力等正当事由以外，视为自行放弃入学资格。（特别提醒：根据学校新生党员培训要求，请新生党员（含</p>
+                            <p class="p3 p3-third">预备党员）于2015年月日到学校学生处教育管理科报到）；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(2)&ensp;报到地点：重庆邮电大学风雨操场</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(3)&ensp;新生档案、户口、党团关系及其他事项办理须知 ：</p>
+                            <p class="p3 p3-third">a.新生档案</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;凡明确了档案由学生自带的省市，该省新生必须自带档案入学报到（学生不得私自拆封档案），报到时交至学生所在学院。需</p>
+                            <p class="p3 p3-third">邮寄档案的请寄至所在学院学生办公室，具体如下： “重庆市南岸区南山街道崇文路2号重庆邮电大学×××学院学生办公室”</p>
+                            <p class="p3 p3-third">b.党团关系 </p>
+                            <p class="p3 p3-third">1.&ensp;&ensp;党组织关系办理：入学新生凡是中共党员（含预备党员）者，其党员组织关系须及时转入我校。党员组织关系介绍信须由县级</p>
+                            <p class="p3 p3-third">及县级以上的党委组织部门开具。请使用新版的三联单介绍信，有效期开至9月开学时间。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;重庆市外转入的，介绍信抬头写中共重庆市委教育工委组织干部处，去的单位写重庆邮电大学××学院。入学报到时连同党员</p>
+                            <p class="p3 p3-third">材料一员材料一起交到所录取学院新生辅导员处，学院收齐后统一送组织部审查。</p>
+                        </div>
+                        <div class="notice-info1 notice-close">
+                            <p class="p2">&ensp;&ensp;&ensp;&ensp;根据重庆市委组织部要求，重庆市内转接组织关系须通过“12371”党建信息平台转接，不需再开纸质介绍信。请新生党员</p>
+                            <p class="p3 p3-second">入学前到原单位党组织办理，转往支部请选择“中共重庆市委教育工委---中共重庆邮电大学委员会---录取学院党总支或党支部</p>
+                            <p class="p3 p3-third">”。在转接原因处请填写新生入学，并注明录取学院、专业。入学报到时需到所录取学院新生辅导员登记并提交党员材料。【校组</p>
+                            <p class="p3 p3-third">织部电话：023-62461130】</p>
+                            <p class="p3 p3-third">2．&ensp;&ensp;团组织关系办理：入学新生是团员者须带团员证，凭团员证接转团组织关系。如果团员证丢失，必须带上由所在中学出具</p>
+                            <p class="p3 p3-third">的团组织关系证明材料，方可报到后补办团员证。且党、团员档案中必备入党、入团的有关材料。【校团委电话：023-</p>
+                            <p class="p3 p3-third">62460140】</p>
+                            <p class="p3 p3-third">c.户口关系 </p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;根据公安机关户籍管理规定，新生入学时是否办理户口迁移凭学生本人自愿，即新生入学时户口可迁可不迁。受南山派出所（我校师生户籍所在地派出所）委托，我校保卫处在新生报到至2015年月日前集中代为办理新生户口迁移手续，此后至学生在校读书期间南山派出所均不再受理户口迁移手续。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;需办理户口迁移的学生，凭身份证和户口迁移证入户，户口迁入地址：重庆市南岸区南山街道崇文路2号附2号。同时，将本人一寸近期免冠照片贴于迁移证左上角，报到时交给学校保卫处（报到现场设办理点）。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;不迁户口的学生，入学报到时填写《未迁户口登记表》（报到现场领取），并贴上一寸近期免冠照片后交给所在学院，由学</p>
+                        </div>
+                        <div class="notice-info2 notice-close">
+                            <p class="p2">院汇总后交保卫处管理。户籍咨询电话:</p>
+                            <p class="p3 p3-second">【南山派出所：023-62463666（上班期间）】【学校保卫处：023-62461150（上班期间）】</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(4);&ensp;新生入学缴费须知：</p>
+                            <p class="p3 p3-third">为了方便学生安全、及时缴纳学费、住宿费（以下简称学杂费）及办理入学报到相关手续，现就2015级新生收费安排通知如下： </p>
+                            <p class="p3 p3-third">a.具体要求 </p>
+                            <p class="p3 p3-third">1.2014级新生学杂费全部使用学校统一办理的重庆农业银行卡（随录取通知书发放的银行卡）缴纳学费，以后每年学杂费的缴纳都将按此方式进行，请新同学们注意将学校办理的银行卡及本“须知”妥善保存，不要遗失，以免耽误缴费和正常报到。</p>
+                            <p class="p3 p3-third">2.请登录重庆邮电大学集中收费平台终端查询系统（简称收费平台，网址：http://jzsf.cqupt.edu.cn）查询学杂费缴费情况，并在“基本信息修改”中完善个人联系电话和核实缴费银行卡卡号，点击“同意扣款协议”后进行数据绑定。在收费平台中，可通过农业银行网银进行自助缴费。 </p>
+                            <p class="p3 p3-third">3.根据学校与重庆市农业银行签订的《委托代扣协议书》，我校已委托中国农业银行南山支行代扣学杂费。为了保证学生顺利完成报到注册的各种手续，根据银行相关规定，请及时亲自签写《委托扣款、划款授权书》后将身份证正反面复印件粘贴在其背面，并到就近农业银行网点将相关款项（包含：学费、住宿费、代收费及银行卡年费）存入银行卡。学生入学报到时，将亲自填写并粘贴有身份证复印件的《委托扣款、划款授权书》交给辅导员，本人不需要到财务处办理任何手续，缴费收据将于9月30日由各学院统一发放。</p>
+                        </div>
+                        <div class="notice-info3 notice-close">
+                            <p class="p2">4.若不能足额存入学费、住宿费、代收费及银行卡年费，请不要将生活费存到账户中，避免被误扣，影响学生日常生活费用开支。</p>
+                            <p class="p3 p3-second">b.用卡须知</p>
+                            <p class="p3 p3-third">1.在首次使用银行卡前，应仔细核对姓名、卡号是否相符，如果不相符，请不要使用，并致电023-62463094咨询。</p>
+                            <p class="p3 p3-third">2．学生须注意用卡安全：银行卡必须由本人保管，在任何情况下学生都不要将银行卡及密码交给或告诉任何人，银行代学校扣缴学费时并不需要银行卡及密码。查询存款余额、交易明细或用卡过程有问题时，请立即致电农行服务热线95599。农行办理的银行卡，学生或学生家长可到任何一个农行网点或自助存款机存入学费、住宿费、代收费和银行卡年费。缴费后剩余存款可在全国任一农行网点或自助提款机上自行取款（注意：该卡在取款前需持本人身份证及银行卡到全国任一农行网点办理激活，激活后方可办理取款业务，仅办理存款不需激活就可办理，激活时输入初始密码，重新设置新密码，初始密码为111111）。为保证资金安全，激活后重新设置的新密码必须保密，只能自已使用，学生发现密码有泄密的可能后，可以在银行自助服务设备上自已修改密码，否则后果自负。到校报到期间，请同学们注意保管好银行卡，最好不要将卡和身份证放在一起，防止丢失时挂失不便。为方便使用ATM，请各位同学在收到银行卡并核对无误后，将银行卡上的纸质标签清除干净。</p>
+                            <p class="p3 p3-third">3.银行卡服务费：在重庆市任何农业银行网点或自助存取款机内存取款不收取任何费用；在重庆市非农行自助取款机取款，无论金额大小，每笔收取手续费2元。在重庆市以外农行存款按金额的0.5%收取手续费，最低1元，最高50元；取款按金额的1%收取手续费，最低1元，最高100元。实际标准可咨询当地农行网点，银行代扣代缴学杂费不收取手续费。 </p>
+                        </div>
+                        <div class="notice-info4 notice-close">
+                            <p class="p2">4. 如果银行卡被盗或丢失，请立即打电话95599按语音提示进行口头挂失，并于五日内持身份证到重庆市任一农业银行网点办理书面挂失手续（如果在规定期限内不能按要求办理的，可以拨打该电话继续挂失）。</p>
+                            <p class="p3 p3-second">开户行:中国农业银行重庆南山支行，地址：重庆邮电大学新校门口右侧。挂失补发新的银行卡后，请及时登录收费平台更新缴费银行卡卡号,以免影响缴费。</p>
+                            <p class="p3 p3-third">5.办理存款后，学生务必持卡入校，以便查询和个人平时使用。我校附近设有农业银行网点（新校门口右侧）、校内设有农行ATM取款机（1栋宿舍旁），可为学生提供服务。</p>
+                            <p class="p3 p3-third">c.联系方式</p>
+                            <p class="p3 p3-third">农行业务咨询电话： 95599、023-62463094</p>
+                            <p class="p3 p3-third">重庆邮电大学财务处咨询电话：023-62461257</p>
+                            <p class="p3 p3-third">集中收费平台网址：http://jzsf.cqupt.edu.cn</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(5);&ensp;奖学金设置:</p>
+                            <p class="p3 p3-third">我校奖助学金面向全体学生，符合条件者均可申请。奖助学金种类多、金额高、覆盖面广（享受奖学金的学生约占总人数的30%），具体设置如下：</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;1.新生奖学金</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（1）IT精英培养资助计划</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;入选对象：河北、河南、湖北、湖南、安徽、广西、四川、云南、贵州、重庆、陕西等11个省区当年参加普通高考的理工类考生。</p>
+                            <p class="p3 p3-third">>&ensp;&ensp;&ensp;&ensp;入选条件：</p>
+                            <p class="p3 p3-third">>&ensp;&ensp;&ensp;&ensp;①第一志愿报考我校并被我校录取的新生；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;②高考成绩达到我校“IT精英培养资助计划”要求；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;③身体健康、品学兼优、富有创新精神、有志于信息产业发展。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;计划名额及资助标准：计划60名。获资助者进校后直接进入“IT精英班”学习，实行导师制，优先推荐免试硕士研究生，优先享受出国培训交流学习的机会等，学校资助其四年学费（具体按照《重庆邮电大学IT精英资助管理办法》执行）。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（2）优秀新生奖学金</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;参评对象：以第一志愿报考我校并以第一专业志愿录取的高考成绩优秀的新生。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;评选比例及金额：按照各学院当年实际录取人数的2%评选，一次性奖励5000元/人。（与IT精英培养资助计划不重复享受，奖励金额就高不就低。）</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;2.综合奖学金</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（1）国家奖学金：8000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（2）国家励志奖学金：5000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（3）优秀学生奖学金：500—5000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（4）郭长波奖学金：5000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（5）春华秋实奖学金：8000元/人·学年</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;3.企业奖学金</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（1）长飞奖学金：8000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（2）中天科技奖学金：3000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（3）南都奖学金：3000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（4）代小权奖学金：5000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（5）四联川仪奖学金：2000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（6）西山科技奖（助）学金：1000—10000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（7）SK hynix创造人才奖学金：5000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;&ensp;（8）通鼎奖学金：3000—4000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;4.单项奖学金</p>
+                            <p class="p3 p3-third">>&ensp;&ensp;&ensp;&ensp;分为科技创新奖学金和文体艺术奖学金，根据学生参加科技和文体艺术竞赛获奖等级予以相应额度奖学金奖励（最高金额10000元/项·学年）。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;5.助学金</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;国家助学金：2000—4000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;社会助学金：1000—2000元/人·学年。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(6)&ensp;资助工作：</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;重庆邮电大学严格按照国家及重庆市相关学生资助政策，采取多种措施，建立起以奖学金、助学贷款、勤工助学为主，助学金及绿色通道等相配合的完善有效的资助体系。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;家庭经济困难学生一方面可以通过勤奋学习，争取获得奖学金，缓解经济压力；另一方面也可以通过申请助学贷款、勤工助学金、国家助学金、社会资助金、“绿色通道”入学、学费减免、临时困难补助等方式顺利完成学业。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;我校坚持将经济资助与成长教育相结合，将物质帮困与励志强能相统一，以经济资助为基础，以精神激励为支撑，以能力提升为核心，以成才就业为目标，形成了“帮困励志·助学强能”的教育引导机制。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;学生资助管理中心：023-62461577</p>
+                            <p class="p3 p3-third p3-center">助学贷款须知</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;我校鼓励家庭经济困难学生积极申请办理助学贷款，解决学费和住宿费，顺利完成学业。助学贷款形式及要求如下：</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（一）生源地信用助学贷款</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;生源地信用助学贷款（简称“生源地贷款”）是指家庭经济困难学生及学生家长通过向生源地相关机构申请办理的助学贷款（约占总人数的20%），由国家开发银行向符合条件的家庭经济困难的普通高校新生和在校生发放的、在学生入学前户籍所在区县（自治县）办理的助学贷款。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;自2007年国家在江苏、湖北、重庆、陕西、甘肃5省市试点开办生源地信用助学贷款业务后，现已覆盖全国各省市区。生源地贷款政策性强、办理方便、发放贷款及时、贷款期限长（最长14年），学生在校期间产生的贷款利息由财政全额贴息。每人每年最高可获得6000元。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;我校鼓励家庭经济困难学生积极向生源所在地县级教育行政部门（学生资助管理中心）申请办理生源地贷款，同时积极配合各地方政府做好我校学生生源地贷款工作。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（二）高校国家助学贷款</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;高校国家助学贷款，是指由学校组织在校家庭经济困难学生向银行申请办理的助学贷款（约占总人数的1%）。国家助学贷款期限最长10年，每人每年可获得与所读专业学费相当的贷款，但最高不超过6000元。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;需要在学校向银行申请办理国家助学贷款的学生，请按以下流程提交信息：</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（1）登录www.gjzxdk.com，进行注册；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（2）注册成功后登录，进入贷款申请页面，根据实际情况进行选择；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;（3）填写申请人相关信息后提交申请。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;具体准备材料如下：</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(1)《就学地国家助学保证保险贷款申请表》原件1份，登陆www.gjzxdk.com注册完善信息提交申请后在线打印；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;家庭经济困难证明原件1份（当地乡、镇或街道民政部门核实并加盖鲜章的《高等学校学生及家庭情况调查表》，①印章清晰；②表中涉及家庭收入栏金额不能涂改，涂改无效；③家庭人均月收入低于350元，人均年收入低于4200元的家庭经济困难学生方可申请；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(3)学生录取通知书（或学生证）复印件1份；</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(4)学生身份证复印件2份。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;以上所有材料必须使用黑色钢笔或者黑色签字笔填写，不得使用圆珠笔或者铅笔填写。</p>
+                            <p class="p3 p3-third p3-center">勤工助学</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;勤工助学活动是指学生在学校的组织下利用课余时间，通过劳动取得合法报酬，用于改善学习和生活条件的社会实践活动。我校长期向家庭经济困难学生提供校内后勤服务、校园管理、工作助理等近1200个勤工助学岗位，学生在学有余力的情况下可通过勤工助学活动缓解经济压力，并得到实践锻炼。参加学生人均每年可获得2000元的勤工助学酬劳。校勤工助学中心和各学院将于9月份招聘2015级新生从事勤工助学活动。</p>
+                            <p class="p3 p3-third">&ensp;&ensp;&ensp;&ensp;(7)&ensp;</p>
+                            <p class="p3 p3-third">1.自带同版近期照片共15张（要求光面相纸洗印，白底一寸，半身、正面、免冠大头照片）。</p>
+                            <p class="p3 p3-third">2.学生公寓备有床上生活用品等设施供同学们选购使用，可满足日常生活需要。</p>
+                            <p class="p3 p3-third">3.我校学生宿舍已由电信公司提供相应的电信服务。</p>
+                            <p class="p3 p3-third">4.请家长和新生认真阅读《重庆邮电大学学生管理与学生自律协议书》，并按要求签名，在入学报到时交回各学院。</p>
+                            <p class="p3 p3-third">5.请家长和新生认真阅读《致2015级新同学的一封信》，积极参加社会实践活动，并在入学报到时将社会实践报告交至各学院（如有图片、视频等资料请一并上交）。</p>
+                            <p class="p3 p3-third">6.新生入学报到，在途中请注意人身及财产安全，严防现金、证件、行李等财物被盗或遗失。在学校报到期间，千万不要委托他人代办入学报到手续，更不要把现金、存折、信用卡交给不相识的人，以免上当受骗。</p>
+                            <p class="p3 p3-third">7.关于新生参加重庆市南岸区城乡合作医疗保险的说明：新生入学即可参加重庆市南岸区城乡合作医疗保险，城乡低保、农村五保、享受国家助学金大学生以及重度（一、二级）残疾大学生等困难学生参保需提供其困难证明的原件及复印件。参保学生个人缴费标准：10-120元/人/年，另外政府补助参保学生200～260元/人/年。具体的就诊和报销办法见入学体检时发放的《重庆邮电大学学生参加南岸区城乡合作医疗保险告知书》。住院可选有住院资格的校医院、区内定点医院、区外三甲医院，在区外住院的须选择公立医院，报销的最高限额14-16.8万元。</p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 group">
+                        <div class="group-info group-close">
+                        <div class="group-first">
+                            <p class="p2"><span class="new-group-all vehicle-span1">学院新生群</span></p>
+                            <div class="department1">             
+                                <p class="p3 p3-second">新生总群：303821503</p>
+                                <p class="p3 p3-third">经济管理学院：459689369</p>
+                                <p class="p3 p3-third">自动化学院：453671920</p>
+                                <p class="p3 p3-third">理学院：246216079</p>
+                                <p class="p3 p3-third">国际学院：464307703</p>
+                            </div>
+                            <div class="department2">
+                                <p class="p3 p3-second">通信与信息工程学院：131831930</p>
+                                <p class="p3 p3-third">软件工程学院：457898785</p>
+                                <p class="p3 p3-third">传媒艺术学院：415452505</p>
+                                <p class="p3 p3-third">外国语学院：162910856</p>
+                                <p class="p3 p3-third">生物信息学院：451968160</p>                
+                            </div>
+                            <div class="department3">
+                                <p class="p3 p3-second">光电工程学院：118702707</p>
+                                <p class="p3 p3-third">计算机科学与技术学院：462513975</p>
+                                <p class="p3 p3-third">法学院：157289160</p>
+                                <p class="p3 p3-third">先进制造工程学院：457395819</p>
+                                <p class="p3 p3-third">体育学院：456870764</p>
+                            </div>
+                        </div>
+                        <div class="group-second">
+                            <p class="p2 p4"><span class="new-group-all vehicle-span1">老乡群</span></p>
+                            <div class="department1">
+                                <p class="p3 p3-third">山西老乡群：119738941</p>
+                                <p class="p3 p3-third">黑龙江老乡群：316348915</p>
+                                <p class="p3 p3-third">安徽老乡群：463237050</p>
+                                <p class="p3 p3-third">陕西老乡群：193388613</p>
+                                <p class="p3 p3-third">四川老乡群1：142604890</p>
+                                <p class="p3 p3-third">四川老乡群2：249923354</p>
+                            </div>
+                            <div class="department2">
+                                <p class="p3 p3-third">四川老乡群3: 312946618</p>
+                                <p class="p3 p3-third">浙江老乡群1：247010642</p>
+                                <p class="p3 p3-third">浙江老乡群2：335964763</p>
+                                <p class="p3 p3-third">贵州老乡群：452210260</p>
+                                <p class="p3 p3-third">山东老乡群1：335450652</p>
+                                <p class="p3 p3-third">山东老乡群2：384043802</p>
+                            </div>
+                            <div class="department3">
+                                <p class="p3 p3-third">广东老乡群：113179139</p>
+                                <p class="p3 p3-third">河南老乡群1：310222276</p>
+                                <p class="p3 p3-third">河南老乡群2：251311309</p>
+                                <p class="p3 p3-third">宁夏老乡群：319432002</p>
+                                <p class="p3 p3-third">湖南老乡群：204491110</p>
+                                <p class="p3 p3-third">云南老乡群：472124132</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="group-info1 group-close">
+                        <div class="group-third">
+                            <div class="department1">
+                                <p class="p2">山西老乡群：119738941</p>
+                                <p class="p3 p3-second">黑龙江老乡群：316348915</p>
+                                <p class="p3 p3-third">安徽老乡群：463237050</p>
+                                <p class="p3 p3-third">陕西老乡群：193388613</p>
+                                <p class="p3 p3-third">四川老乡群1：142604890</p>
+                                <p class="p3 p3-third">四川老乡群2：249923354</p>
+                            </div>
+                            <div class="department2">
+                                <p class="p2">山西老乡群：119738941</p>
+                                <p class="p3 p3-second">黑龙江老乡群：316348915</p>
+                                <p class="p3 p3-third">安徽老乡群：463237050</p>
+                                <p class="p3 p3-third">陕西老乡群：193388613</p>
+                                <p class="p3 p3-third">四川老乡群1：142604890</p>
+                                <p class="p3 p3-third">四川老乡群2：249923354</p>
+                            </div>
+                            <div class="department3">
+                                <p class="p2">山西老乡群：119738941</p>
+                                <p class="p3 p3-second">黑龙江老乡群：316348915</p>
+                                <p class="p3 p3-third">安徽老乡群：463237050</p>
+                                <p class="p3 p3-third">陕西老乡群：193388613</p>
+                                <p class="p3 p3-third">四川老乡群1：142604890</p>
+                                <p class="p3 p3-third">四川老乡群2：249923354</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 vehicle">
+                        <div class="vehicle-info1">
+                            <p class="p2"><span class="vehicle-span1">从车站报到期间，我校将在重庆市菜园坝火车站和龙头寺火车站设新生接待站，接待站有同学负责引导新生到指</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">定地点乘车。</span></p>
+                            <p class="p3 p3-third">&ensp;</p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">重庆江北机场（距离学校约40公里）：</span><span class="vehicle-span2">可乘机场大巴至上清寺后转乘108路公交车至南坪，再转乘346或347路公交车到学校</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">；或乘轻轨三号线到南坪，再转乘346或347路公交车到学校；直接打车到校费用约为70元；</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">龙头寺火车站、重庆北站（距离学校约20公里）：可乘323路或168路公交车至南坪，转乘346或347路公交车至学校：或乘轻轨三</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">号线到南坪，再转乘346或347路公交车到学校；直接打车到校费用约40元；</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">菜园坝火车站、汽车站（距离学校约12公里）：</span><span class="vehicle-span2">可在菜园坝广场乘347路公交车至学校；直接打车到校费用约为25元；</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">朝天门码头（距离学校约9公里）：</span><span class="vehicle-span2">可乘车至南坪后转乘346或347路公交车至学校；直接打车到校费用约为20元。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 schoolbus">
+                        <div class="schoolbus-info schoolbus-close">
+                            <p class="p2">&ensp;&ensp;&ensp;&ensp;校车从八十万出发，经过数字图书馆到达新校门站，再由樱花大道到达三教，再右转到风雨操场后往上直行到</p>
+                            <p class="p3 p3-second">达留学生楼，由留学生楼后依次经过五教、八教、经管学院，之后进入宿舍区，校车将依次经过20、23、19、22</p>
+                            <p class="p3 p3-third">、18、17、21栋宿舍楼后达到红高粱食堂上方，然后从红高粱向下行驶，到达15、16、24栋宿舍楼，然后来到大</p>
+                            <p class="p3 p3-third">学城食堂，再依次经过25、26、27、28、29、31、30、32栋宿舍楼，直行到达大西北食堂和乐购便利店，经过</p>
+                            <p class="p3 p3-third">11、12栋宿舍楼，路过情人坡，向下行驶到10、9、8宿舍楼，最后从信科大厦回到始发站。</p>
+                        </div>
+                        <div class="schoolbus-info1 schoolbus-close">
+                            <img src="images/schoolbus.jpg">
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 domitory">
+                        <div class="domitory-info domitory-close">
+                            <p class="p2"><span class="vehicle-span1">各个宿舍楼的大致情况：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">今年大一新生根据专业班级按照姓氏分配在宿舍楼1、5、6、8-12、15-20、22-30、32栋。床铺的长宽大致为80cm*200cm。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">其中1、5、6是学校现存最老的寝室。住宿条件比较差。其中1栋是女生宿舍，5、6栋是男生宿舍。整体情况是每层楼设有公用的卫</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">生间、洗澡间，这也就意味着每个寝室都没有独立卫生间，没有阳台。寝室一般都是4人间（每个寝室有2个高低床，一张大书桌、4</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">个凳子和两个供大家放东西的柜台）。虽然室内环境简陋，但是位置十分优越。处于校园中心，上课、生活都极其便利。</span></p>
+                            <p class="p3 p3-third">&ensp;</p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">8-12栋位于学校情人坡旁边，是学校标准的4人间，上床下桌，配有阳台，独立卫生间。楼栋周边环境一流，食堂与超市一应俱全，</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">为学习生活提供不少的便利。</span></p>
+                            <p class="p3 p3-third">&ensp;</p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">15-20栋分布在太极运动场的南边与东边。周边有学校的兴业院食堂及众多的超市、商铺，校车从这里穿过。寝室内部均设有独立卫</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍不同，楼层不同分为4人间、6人间两种。4人间基本情况与8-12栋一样，</p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">而6人间则是上下铺与上床下桌的混搭。</span></p>
+                            <p class="p3 p3-third">&ensp;</p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">22-24屹立于悠悠重邮高处，周边风景秀丽，无论冬夏，绿色永存，每至冬季，一旁还有腊梅香气飘来。楼栋门前不时还会有校车等</span></p>
+                        </div>
+                        <div class="domitory-info1 domitory-close">
+                            <p class="p2"><span class="vehicle-span2">路过，其周边有“千喜鹤”、“好食基”、“红高粱”等食堂，还有重邮阳光超市、叮当超市、华生园等购物>场所，交通便利，可以</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">尽情满足同学们的平日生活需求。此外，楼栋内部住宿条件优越，环境较好，22栋全部为4人间寝室,23及24全部为6人间寝室，且有</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">独立的阳台、卫浴。</span></p>
+                            <p class="p3 p3-third">&ensp;</p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">25-30在学校的东南方向，周边分布有“千喜鹤”、“好食基”食堂。宿舍基本为6人间基本情况与22-24相同且有独立的阳台、卫浴，床</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">铺是上下铺与上床下桌的混搭。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 life">
+                        <div class="life-info life-close">
+                            <p class="p2"><span class="vehicle-span1">学校附近的衣食住行</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">【银行】</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">在校内，中心食堂对面有农业银行、工商银行、建设银行、交通银行设置的ATM取款机；在校外，新校门处有农业银行服务大厅，</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">同学们在开学的时候需要到这里去激活学校为每人配发的农行卡，在老校门处有邮政储蓄银行服务大厅，对还有重庆农村商业银行</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">。学校附近的银行大致就是这么多，请有需要的同学提前准备好噢。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">【超市】</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">初来乍到的同学们肯定需要购买各种生活必需品，学校内外有大大小小十几个小卖部超市，下面为大家简单介绍主要的几个超市：</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">雅客来超市：</span><span class="vehicle-span2">在19栋宿舍楼下面，规模较大，有各种各样的生活用品、零食、水果、饮料等等，种类比较齐全；</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">15栋宿舍楼商业街：</span><span class="vehicle-span2">分布在15栋宿舍楼下面的一条商业街，有大大小小好几家小卖部、蛋糕店、奶茶店等等，另外，领取快递的地方</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">也都主要集中在这里。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">乐购：</span><span class="vehicle-span2">位于大西北食堂（12栋宿舍楼背面）对面，也是一家较大的超市，种类都比较齐全。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">渝芳百货：</span><span class="vehicle-span2">在老校门出门右转即到，有各种各样同学们需要的商品，价格也比较实惠，同学们可以去采购对比一下。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">新世纪百货；</span><span class="vehicle-span2">位置在新校门右转农业银行旁，比较大型的超市，商品种类要比学校里面的更加齐全。</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span1">永辉超市（黄桷垭店）：</span><span class="vehicle-span2">学校附近最大的超市，但是位置离学校比较远，位于黄桷垭小学对面，距离学校大约600米，适合周末</span></p>
+                        </div>
+                        <div class="life-info1 life-close">
+                            <p class="p2"><span class="vehicle-span2">进行大采购。</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">【吃住】</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">刚来报道的同学们大都是在父母的陪同下来学校的，肯定会关心饮食以及住宿问题，学校老校门对面有著名的“堕落街”，里面有各</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">式各样好吃又便宜的餐馆小店，脆皮鸡、小面、孃孃汤圆、汤锅等等，总有一家适合你；来重庆当然少不了吃火锅,，学校附近有好几</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">家火锅店，距离近，价格实在，还不快来一饱口福。校里面有重邮宾馆，但是价格偏高，标间大约在200/晚，条件还可以；如果</span></p>
+                            <p class="p3 p3-third"><span class="vehicle-span2">觉得贵的话还可以考虑老校门对面潘阿姨的旅社，价格大约在50/晚，价格实惠。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schoolmap real info" id="pano_container">
+                    <p class="p1">
+                        <span class="organization-btn1 ">团委直属部门</span>
+                        <span class="organization-btn">校学生会</span>
+                        <span class="organization-btn">科技联合会</span>
+                        <span class="organization-btn">社团联合会</span>
+                        <span class="organization-btn">青年志愿者协会</span>
+                        <span class="organization-btn">大学生艺术团</span>
+                        <span class="organization-btn">社团</span>
+                    </p>
+                    <div class="info-div1 league">
+                        <div class="league-info to-right league-close">
+                            <p class="p2"><span class="vehicle-span1">团委直属部门：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">【办公室】 </span><span class="vehicle-span2">团委办公室是与团委老师之间沟通的媒介，是团委老师的有力助手。主要负责日常公文的起草、书写，会议安排、会议</span></p>
+                            <p class="p3"><span class="vehicle-span2">签到、记录，团委各类文件的收集、整理和归档；其次负责团委办公用品的采购、保管和维护；为团委各项工作顺利开展做好后勤保</span></p>
+                            <p class="p3"><span class="vehicle-span2">障，同时及时向上级报告团委的工作情况，传达上级团组织的文件精神，协调学院团总支之间日常工作的开展。做好机要文件的管理</span></p>
+                            <p class="p3"><span class="vehicle-span2">和团委印章的保管使用工作及团委考勤纪录，团委工作日志的书写，做好团委期末总结、年度总结和报送工作。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【组织部】 </span><span class="vehicle-span2">主要负责团委日常的团务工作，组织和开展各种团委活动，加强全校基础团组织建设，加强与基层团组织的联系，经常</span></p>
+                            <p class="p3"><span class="vehicle-span2">了解基层团支部的组织建设情况，对各团支部活动的开展进行指导、监督、检查与帮助。同时作为上级党组织和广大团员之间的纽带</span></p>
+                            <p class="p3"><span class="vehicle-span2">，协助学生“推优入党”工作的进行。同时组织部还负责团费收缴工作、团员证的颁发、组织关系的接转；及做好团员证的年度注册</span></p>
+                            <p class="p3"><span class="vehicle-span2">，团员档案的归档；全面掌握全院共青团组织的情况（分团委、团支部数量及人员构成，专兼职团干部的数量、比例等），及时进行</span></p>
+                            <p class="p3"><span class="vehicle-span2">团员登记和团员及团干部变动情况调查统计工作，年底上报团市委组织部。开展达标创优活动，评选“红旗分团委”、“优秀团支部</span></p>
+                            <p class="p3"><span class="vehicle-span2">”、“优秀团员”、“优秀团员”、“ 优秀团干部”“十佳五四红旗团支部”等。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【宣传部】 </span><span class="vehicle-span2">宣传部是动力团委的宣传阵地，是以党的思想方针和政策为工作中心，是宣传我院学生工作、服务各项活动的形象窗口</span></p>
+                            <p class="p3"><span class="vehicle-span2">，根据有关指示，结合适宜时机，突出宣传党团的思想理论、方针及政策，做好宣传工作。 组织校园各种征文活动，利用橱窗、板报</span></p>
+                            <p class="p3"><span class="vehicle-span2">等宣传党的政策、先进人物事迹和学校、国内的重大活动。负责团内简报的编辑出版和发行、对大型活动的宣传报导，向新闻单位发</span></p>
+                        </div>
+                        <div class="league-info1 to-right league-close">
+                            <p class="p2"><span class="vehicle-span2">送稿件等。总结青年工作经验，宣传工作典型，创造良好的校园舆论环境。</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">【调研部】 </span><span class="vehicle-span2">其主要职责是结合校团委实际工作需求，及时广泛的了解同学们身边发生的事情，切实的反映问题并关注社会热点，以</span></p>
+                            <p class="p3"><span class="vehicle-span2">前瞻性的目光发现问题，采用科学严谨的态度，以问卷、座谈和走访为主要调查方式，进行系统的量化分析，形成科学的调查报告，</span></p>
+                            <p class="p3"><span class="vehicle-span2">为团务工作的开展提供有参考价值的信息与科学合理的建议。通过这样一个“提出--解决--反馈”的良性循环搭建学生与老师、学校交</span></p>
+                            <p class="p3"><span class="vehicle-span2">流、沟通的平台，为学生排忧解难，在以促进学生个人全面发展为目标的基础上，为学校构建良好的育人环境提供科学的依据。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 community">
+                        <div class="community-info to-right community-close">
+                            <p class="p2"><span class="vehicle-span1">校学生会：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">重庆邮电大学学生会是由校党委、市学联领导，由校团委具体指导的群众性组织。 重庆邮电大学学生会以“全心全意为同学服务”为</span></p>
+                            <p class="p3"><span class="vehicle-span2">宗旨，充分发挥同学主人翁精神，加强学风建设，营造浓厚的读书氛围，以提高学生综合素质、推进校园文化建设为目标，创建了一</span></p>
+                            <p class="p3"><span class="vehicle-span2">批深受同学们喜爱的科技文化活动，积极营造校园爱心氛围，结合校园实际，积极加强大学生法制观念，维护大学生合法权益，开展</span></p>
+                            <p class="p3"><span class="vehicle-span2">文体活动，丰富校园文化生活。利用现有资源，打造网络交流平台，通过编撰刊物，展示理论成果。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【办公室】 </span><span class="vehicle-span2">办公室是学生会的重要机构，是主席团的重要助手，担当着学生会工作的规划者和监督者的角色，是各部门、各学院学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生会强有力的援助机构和统筹机构。办公室负责协助主席团了解和掌握学生会工作情况；协助主席起草计划、文件、总结；加强校学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生会与各学院学生会的联系，建立和完善上报机制；向主席团提供有关信息、情况、依据；加强学生会各部门之间的联系，做好学生</span></p>
+                            <p class="p3"><span class="vehicle-span2">会工作大事记的收集、整理工作；负责学生会规章制度的建设工作；负责学生会档案的编写和整理工作；负责安排学生会各类会议，</span></p>
+                            <p class="p3"><span class="vehicle-span2">确立议程，并督促检查会议决定的执行情况；负责学生会财务的管理工作；接待来访人员等工作。同时还致力于加强与其他各高校学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生会、研究生会、中学学生会的联系。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【学习部】 </span><span class="vehicle-span2">学习部作为学生会与学生学习息息相关的部门担负着弘扬学术、倡导学业、营造校园学术氛围的基本职能。学习部在学</span></p>
+                            <p class="p3"><span class="vehicle-span2">年伊始就会迎来她的第一个也是最重要的品牌活动——校园“新生演讲赛”。除此之外，学习部还以“学术”为中心开展多种丰富的</span></p>
+                            <p class="p3"><span class="vehicle-span2">活动,如“读书月系列活动”、“信科杯”辩论赛等等。在这些活动中，“学习”不再是枯燥乏味的代名词，学习部以重邮特有的活力</span></p>
+                        </div>
+                        <div class="community-info1 to-right community-close">
+                            <p class="p2"><span class="vehicle-span2"营造出浓郁而活泼的学习氛围，拓宽同学们的视野，丰富校园文化，为全校师生搭建了一个提高综合素质，繁荣人文气息的平台，使</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">同学们能够开心地游弋于学术的海洋。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【生活部】 </span><span class="vehicle-span2">大家生活的精彩就是生活部工作的目标。生活部旨在引领校园文化生活，关爱大学生活。生活部在同学生活服务方面开</span></p>
+                            <p class="p3"><span class="vehicle-span2">展一系列活动丰富大家的校园生活，依托“校园厨艺大赛”等精品活动，着力加强校园餐饮文化的监督。爱是一个“于无声处听惊雷</span></p>
+                            <p class="p3"><span class="vehicle-span2">”的概念，生活部用它事无巨细的精神、无微不至的工作态度为同学们铺成了一条通向舒适生活的大道，把温暖直接送到了大家的心</span></p>
+                            <p class="p3"><span class="vehicle-span2">窝里。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【文娱部】 </span><span class="vehicle-span2">文娱部作为学生会开展文娱活动的部门、担任着丰富校园文化的重任。文娱部以“丰富校园文化生活，活跃校园文艺氛</span></p>
+                            <p class="p3"><span class="vehicle-span2">围，引导校园文化”为目标，锐意创新、辛勤付出，开展着一个个精彩纷呈的文娱活动，并努力把这些活动打造成精品。文娱部主要</span></p>
+                            <p class="p3"><span class="vehicle-span2">负责策划、承办校园“十大歌手赛”、“舞蹈大赛”等全校性的大型文娱活动。在文娱部的活动中永远不变的主体也就只有一个――那</span></p>
+                            <p class="p3"><span class="vehicle-span2">就是“学生”，这也造就了文娱部为所有对于舞台有着美好憧憬的同学服务，为大家打造一个展现自我风采，释放自我激情平台。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【女生部】 </span><span class="vehicle-span2">女生部作为学生会服务女同学的重要部门，以关爱女生、服务女生为宗旨，以各种活动与服务为契机，坚持以“服务女</span></p>
+                            <p class="p3"><span class="vehicle-span2">生，关心女生，加强男女生之间的交流”为宗旨，关心女生成长，展现女生魅力，给重邮女生提供一个展现自我的平台，以此来锻炼</span></p>
+                            <p class="p3"><span class="vehicle-span2">女生的能力，提高女生的整体素质，最终达到提高校园整体文化品味的目的。同时，女生部又给男生和女生的沟通搭起一座桥梁，让</span></p>
+                            <p class="p3"><span class="vehicle-span2">男生和女生在交流中感受每一分的温情与感动，寻找生活中的纯真与浪漫，形成男女和谐的校园文化氛围。</span></p>
+                        </div>
+                        <div class="community-info2 to-right community-close">
+                            <p class="p2"><span class="vehicle-span1">【体育部】 </span><span class="vehicle-span2">体育部作为学生会开展体育活动的部门，体育部的责任不仅仅是办好品牌活动、为重邮体育人服务，更重要的是向每一</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">位同学传播体育文化，从点滴处做起，为每一个重邮人都能拥有健康的身体而做出贡献。体育部宣扬运动强身为核心，全力打造校内</span></p>
+                            <p class="p3"><span class="vehicle-span2">体育文化，搭建体育交流平台，提高全校体育水平，丰富校园文化生活，展现当代大学生和大学教师的朝气和活力。促进校园精神文</span></p>
+                            <p class="p3"><span class="vehicle-span2">明建设的发展是体育部办好每一届赛事的根本宗旨。体育部的理念在大型团体体育赛事——“青春杯”系列体育赛事中贯穿始终，那</span></p>
+                            <p class="p3"><span class="vehicle-span2">就是：弘扬体育精神，让更多的同学参与体育、热爱体育，塑造更加完美的重邮人！ </span></p>
+                            <p class="p3"><span class="vehicle-span1">【自律权益部】 </span><span class="vehicle-span2">自律权益部是学生会大家庭中的年轻部门，以维护学生权益、宣传法制、倡导精神文明、提高同学们的法制知识与</span></p>
+                            <p class="p3"><span class="vehicle-span2">自我防范意识为主要任务，并与学校保卫处等相关职能部门密切合作，共同致力于我校精神文明建设，扛起了重邮学生会新形象的一</span></p>
+                            <p class="p3"><span class="vehicle-span2">面大旗。我们的工作面向同学们日常生活学习中所遭遇的侵权事件和不合理现象，涉及到校园生活的方方面面。双向联系同学和学校</span></p>
+                            <p class="p3"><span class="vehicle-span2">，建立沟通的桥梁；针对反应热点，进行重点攻关，代表同学与学校相关部门交涉，争取合法权益，促进学校决策的优化；普及维权</span></p>
+                            <p class="p3"><span class="vehicle-span2">知识，唤起自主维权的意识。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【宣传部】 </span><span class="vehicle-span2">宣传部肩负着学生会的常规宣传工作，负责规范管理校园文化宣传阵地。宣传部作为学生会面向全校的一个窗口，辅助</span></p>
+                            <p class="p3"><span class="vehicle-span2">学生会的活动前期宣传。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 science">
+                        <div class="science-info to-right science-close">
+                            <p class="p2"><span class="vehicle-span1">科技联合会：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">重庆邮电大学科技联合会简称科联、是在校团委指导下，和校学生会齐名组织承办重庆邮电大学所有在校学生科技活动的校级学生组</span></p>
+                            <p class="p3"><span class="vehicle-span2">织。 我们以“挑战杯”为龙头，以“学生科技文化节”和“创业计划大赛”为特色品牌，以学生科技沙龙为支柱，并打造了“十佳学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生科技标兵”评选等一系列学生课外科技活动，并且我们长期举办各种有益于学生发展的各种生活IT沙龙以及讲座。 重庆邮电大学学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生科技联合会，我们以引领重邮校园的科技时尚，浓厚校园的科技创新氛围为己任，力图打造重庆高校中科技活动组织的第一品牌。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【办公室】 </span><span class="vehicle-span2">负责制定、完善科联制度和管理规范；负责科联内部联络和部门协调；负责物资管理、值班管理、档案管理；组织进行</span></p>
+                            <p class="p3"><span class="vehicle-span2">科联干部干事培训、交流、考核；制作《学生科技联合会工作简报》（每月一期）。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【竞赛活动部】 </span><span class="vehicle-span2">负责全校性学生学术科技创新创业竞赛活动的组织开展；组织学生参加校外各级各类学术科技创新创业竞赛活动；组</span></p>
+                            <p class="p3"><span class="vehicle-span2">织开展学生科创成果展。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【项目管理部】 </span><span class="vehicle-span2">收集校内外学生科技创新创业项目信息；负责学生科技创新创业项目的申报、立项、管理、监督；考评各学院学生</span></p>
+                            <p class="p3"><span class="vehicle-span2">科技协会工作情况；负责学生科技创新基地的管理。</span></p>
+                            <p class="p3"><span class="vehicle-span1">【科技人文部】 </span><span class="vehicle-span2"></span>负责“科技•创新•成才”论坛、学生学术科技沙龙、科技创新创业讲座的组织、审批和管理工作；组织学术交流活动、科普知识宣传活动；负责学生学术科技沙龙基地的管理。</p>
+                            <p class="p3"><span class="vehicle-span1">【宣传部】 </span><span class="vehicle-span2">负责科联及各项活动的校内外宣传；制作《科创之星》；负责科联各类文字、图片信息的编辑、整理及对外发布。</span></p>
+                        </div>
+                        <div class="science-info1 to-right science-close">
+                            <p class="p2"><span class="vehicle-span1">【信息部】 </span><span class="vehicle-span2">负责开发、建设、维护科联网站；为网上学术科技创新创业活动搭建网络平台；制作科创活动视频、音频资料。</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span1">【对外合作部】 </span><span class="vehicle-span2">与其他兄弟高校学生科创组织建立友好联系，加强合作交流，积极协助开展校际活动；经调查了解定期形成《校内</span></p>
+                            <p class="p3"><span class="vehicle-span2">外学生科创活动情况报告》；开展能塑造和拓展科联影响力的各类活动。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 united">
+                         <div class="united-info to-right united-close">
+                            <p class="p2"><span class="vehicle-span1">社团联合会：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">社团联合会在校团委的直接指导下，管理社团工作、服务社团发展的学生组织，旗下管辖着涵盖文学学术、实践服务、艺术文化、爱</span></p>
+                            <p class="p3"><span class="vehicle-span2">好兴趣、体育运动等功能丰富、类型兼备的各类学生社团组织。它以充分调动众多社团及其会员的积极性和创造性，全面开展有深度</span></p>
+                            <p class="p3"><span class="vehicle-span2">、有内涵、有品位、有价值、有意义的社团活动，不断丰富校园文化生活，提高当代大学生的学习能力、实践能力、组织能力和创新</span></p>
+                            <p class="p3"><span class="vehicle-span2">能力为目标。 作为青年自组织，学生社团是培养和发展大学生兴趣爱好的广阔平台，是培养学生自我教育、自我管理、自我服务的有</span></p>
+                            <p class="p3"><span class="vehicle-span2">效形式，是构建“一体两翼”学校团建大格局的重要组成部分，是凝聚青年、丰富校园文化、培育和传承大学精神的重要载体，目前</span></p>
+                            <p class="p3"><span class="vehicle-span2">，能否建设好高校的社团已经成为一个高校是否具有活力和文化氛围的重要标志之一。学生社团遍布全国高校校园的各个角落，扮演</span></p>
+                            <p class="p3"><span class="vehicle-span2">着丰富校园文化生活、提升校园文化品位、引领校园文化时尚的重要角色。社团联合会扮演着对各社团服务和管理的双重角色，对学</span></p>
+                            <p class="p3"><span class="vehicle-span2">生社团的发展起着至关重要的作用。 部门设置 学生社团联合会的基本下属机构有：办公室、策划部、宣传部、监督管理部、考评部、</span></p>
+                            <p class="p3"><span class="vehicle-span2">外联部、财务部、新闻采编部、公关部。不同的学校还会设立不同的一些部门，如网络部、媒体部等。 社团联合会一般为主席，副主</span></p>
+                            <p class="p3"><span class="vehicle-span2">席，各部部长，委员，干事的层层管理组织。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 young">
+                         <div class="young-info to-right young-close">
+                            <p class="p2"><span class="vehicle-span1">青年志愿者协会：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">重庆邮电大学青年志愿者协会成立于2014年6月，其前身是共青团重庆邮电大学委员会社会实践与志愿服务部。主要负责学校社会实</span></p>
+                            <p class="p3"><span class="vehicle-span2">践工作和青年志愿者工作的组织与协调，对各团支部的相关活动进行指导和监督；协助团委完成“三下乡”暑期社会实践活动、</span></p>
+                            <p class="p3"><span class="vehicle-span2">“12•5国际志愿者日”志愿服务周系列活动、“优秀青年志愿者服务队”评选、“校园文明建设”及共青团城乡市民学校相关工作。</span></p>
+                            <p class="p3"><span class="vehicle-span1">重庆邮电大学青年志愿者协会的主要志愿活动有：</span></p>
+                            <p class="p3"><span class="vehicle-span1">“12•5国际志愿者日”志愿服务周：</span></p>
+                            <p class="p3"><span class="vehicle-span2">1985年12月17日，第四十届联合国大会通过决议，从1986年起，每年的12月5日为“国际促进经济和社会发展志愿人员日”，简称国</span></p>
+                            <p class="p3"><span class="vehicle-span2">际志愿人员日（IVD）。其目的是敦促各国政府通过庆祝活动唤起更多的人以志愿者的身份从事社会发展和经济建设事业。</span></p>
+                            <p class="p3"><span class="vehicle-span2">而在每年的12.5来临之际，在团委的统一部署下，重庆邮电大学青年志愿者协会联合13个学院青年志愿者协会在一周左右时间内开展</span></p>
+                            <p class="p3"><span class="vehicle-span2">大大小小各种类型活动，传播志愿者文化，弘扬志愿服务精神。其中重庆邮电大学青年志愿者协会的“换客大行动”已经成为每年国</span></p>
+                            <p class="p3"><span class="vehicle-span2">际志愿者日的常规活动，已经举办过两届的“换客大行动”得到了学校师生的一致好评。</span></p>
+                            <p class="p3"><span class="vehicle-span1">共青团城乡市民学校：</span></p>
+                            <p class="p3"><span class="vehicle-span2">走进社区，以志愿服务的方式开办“城乡社区共青团市民学校”（以下简称“市民学校”），是团市委组织我市各级共青团组织积极</span></p>
+                            <p class="p3"><span class="vehicle-span2">参与社会管理，促进社会和谐的新探索。高校共青团组织作为广大热血青年的聚集地，更应该积极的行动起来。</span></p>
+                        </div>
+                         <div class="young-info1 to-right young-close">
+                            <p class="p2"><span class="vehicle-span2">为了让青年志愿者在“市民学校”建设中发挥更大的作用，进一步推动青年志愿者服务社区的能力。重庆邮电大学团委积极响应团市</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">委号召，结合实际，先后与南岸区、渝中区、大渡口区等16个社区的“市民学校”进行了合作共建，帮助社区组建少儿艺术团、开展</span></p>
+                            <p class="p3"><span class="vehicle-span2">卫生保健、英语教学、电器维修、计算机技能培训、宣传中国传统文化等。此外，红岩网校工作站作为重庆市首批“青春倡廉示范岗</span></p>
+                            <p class="p3"><span class="vehicle-span2">”也积极参与“市民学校”共建。现志愿者注册人数达15821人。</span></p>
+                            <p class="p3"><span class="vehicle-span1">全国大学生志愿者暑期文化科技卫生“三下乡”社会实践活动：</span></p>
+                            <p class="p3"><span class="vehicle-span2">我校每年都会依据团中央、团市委对“三下乡”活动具体指导思想，根据我校实际情况，开展暑期“三下乡”社会实践活动。让同学</span></p>
+                            <p class="p3"><span class="vehicle-span2">们以此为契机，将平日在学校所学知识，送进社区、送进农村和山区，促进当地文化、科技、卫生的发展。我校已连续数年获得“三</span></p>
+                            <p class="p3"><span class="vehicle-span2">下乡”优秀组织单位称号。</span></p>
+                            <p class="p3"><span class="vehicle-span1">大型赛会志愿服务：</span></p>
+                            <p class="p3"><span class="vehicle-span2">去年，我校青年志愿者先后为中国（重庆）国际云计算博览会、重庆市学生联合会第四次代表大会、重庆邮电大学第一届董事会第四</span></p>
+                            <p class="p3"><span class="vehicle-span2">次董事大会提供志愿服务，得到了活动主办方、团市委、校方的一致好评。</span></p>
+                            <p class="p3"><span class="vehicle-span1">敬老助老活动：</span></p>
+                            <p class="p3"><span class="vehicle-span2">我校一直开展“敬老助老”系列活动，主题突出人文关怀，以“关爱老人、构建和谐”为宗旨，以学院、班级为单位，尤其注重对我</span></p>
+                            <p class="p3"><span class="vehicle-span2">校退休老教师的一对一帮扶活动，大力推行“老吾老以及人之老”的道德风尚。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 arts">
+                         <div class="arts-info to-right arts-close">
+                            <p class="p2"><span class="vehicle-span1">大学生艺术团：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2"></span></p>
+                            <p class="p3"><span class="vehicle-span2">重庆邮电大学大学生艺术团是在校团委直接指导管理下的学生艺术团体，肩负组织学校重大文艺活动，代表学校对外联谊，演出和参</span></p>
+                            <p class="p3"><span class="vehicle-span2">加省市文艺大赛的重任。秉承“服务同学，锻炼自我”的宗旨，以丰富校园文化生活，陶冶情操，加强与其他院校艺术交流与沟通，</span></p>
+                            <p class="p3"><span class="vehicle-span2">为校宣传争光，活跃人文气氛等为前提，要求每个成员在艺术实践中以高标准、严要求的态度约束自己。 大学生艺术团由管乐团、合</span></p>
+                            <p class="p3"><span class="vehicle-span2">唱团、舞蹈团、曲艺团组成。主要承担着我校各项大型演出任务，组织编排各项文艺节目，为有文艺特长的同学搭建良好的交流和展</span></p>
+                            <p class="p3"><span class="vehicle-span2">示平台，每个分团都有固定的训练时间和专业指导老师。近年来，大学生艺术团一次次圆满完成学校交给的各项文艺演出任务，并锻</span></p>
+                            <p class="p3"><span class="vehicle-span2">炼和培养了一批批艺术人才。为我校大学生文艺素质的培养，树立了一面旗帜。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                    <div class="info-div1 social">
+                         <div class="social-info to-right social-close">
+                            <p class="p2"><span class="vehicle-span1">实践技能类（28）：</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">电子协会、通信软件协会、电子竞技协会、信息安全协会、3S协会、软件技术与应用协会、硬件技术与应用协会、Linux协会、机器人</span></p>
+                            <p class="p3"><span class="vehicle-span2">协会、推理协会、科幻协会、半导体协会、科技创新协会 、天文爱好者协会、电子商务协会、金融协会、创业者协会、市场营销协会</span></p>
+                            <p class="p3"><span class="vehicle-span2">、ERP协会、政法论坛协会、辩论协会、闪客协会、数字媒体协会、数学建模协会、航模协会、 物联网协会 、数码协会、TG精英社；</span></p>
+                            <p class="p3"><span class="vehicle-span1">理论学习类（9）：</span></p>
+                            <p class="p3"><span class="vehicle-span2">科技论文讲习社、生命科学协会、数学俱乐部、翻译协会、CSDN俱乐部、舆论与传播协会、红色社团、历史协会、物理协会；</span></p>
+                            <p class="p3"><span class="vehicle-span1">文艺拓展类（27）：</span></p>
+                            <p class="p3"><span class="vehicle-span2">象棋协会、东方舞蹈协会、桌游协会、饮食文化协会、兰亭书社、中国传统文化交流协会、动漫协会、南山文学社、摄影协会、电影</span></p>
+                            <p class="p3"><span class="vehicle-span2">协会、重邮剧社、音乐协会、民族乐器协会、街舞协会、瑜伽协会、西乐社、龙影棍道协会、外文剧社、英语俱乐部、b-box协会、</span></p>
+                            <p class="p3"><span class="vehicle-span2">骆驼社、诵读协会、天元围棋协会、吉他社、百闻茶道社、魔方社、汉韵新樱协会；</span></p>
+                            <p class="p3"><span class="vehicle-span1">体育竞技类（12）：</span></p>
+                            <p class="p3"><span class="vehicle-span2">足球协会、篮球协会、武术协会、乒乓球协会、网球协会、羽毛球协会、柔道协会、健美操协会、跆拳道协会、健身健美协会、体育</span></p>
+                            <p class="p3"><span class="vehicle-span2">舞蹈协会、素质拓展协会；</span></p>
+                            <p class="p3"><span class="vehicle-span1">公益服务类（12）：</span></p>
+                        </div>
+                        <div class="social-info1 to-right social-close">
+                            <p class="p2"><span class="vehicle-span2">网络志愿者协会、识途社、爱心社、心理协会、国防教育协会、坚守者协会、动物保护协会、三农协会、大学生消费者协会、就业与</span></p>
+                            <p class="p3 p3-second"><span class="vehicle-span2">公共关系协会、学生消防志愿者协会。</span></p>
+                        </div>
+                        <div class="pageGro" class="cb">
+                            <div class="pageUp"></div>
+                            <div class="pageList">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </div>
+                            <div class="pageDown"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="top" id="top"><a href="javascript:void(0)"><img src="images/top.png"></a></div>
+</div>
+<div id="footer">
+    <div class="footer_nav clear">
+        <ul>
+            <li><a href="/aboutus">关于红岩网校</a></li>
+            <li>|</li>
+            <li><a href="/web">网站地图</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);">指出错误</a></li>
+            <li>|</li>
+            <li><a href="javascript:void(0);">管理入口</a></li>
+            <li>|</li>
+        </ul>
+    </div>
+    <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+    <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内）400065 E-mail:redrock@cqupt.edu.cn(023-62461084)</p>
+</div>
+<script>
+    $(function(){
+        $(".cqupt_mapcontent h1 span:eq(0)").click(function(){
+            $("#schoolmap").find(".p1 span:eq(0)").click();
+            $(this).addClass("span_bg").siblings().removeClass("span_bg");
+            $("#schoolmap").css("display","block").siblings("div").css("display","none");
+        });
+        $(".cqupt_mapcontent h1 span:eq(1)").click(function(){
+            $(".real").find(".p1 span:eq(0)").click();
+            $(this).addClass("span_bg").siblings().removeClass("span_bg");
+            $(".real").css("display","block").siblings("div").css("display","none");
+        
+            $("pano_container").css("display","block");
+            $("#schoolmap").css("display","none");
+        });
+        $(".real-test").find(".p1 span").click(function(){
+            $(this).addClass("hover").siblings().removeClass("hover");
+            var a = $(this).index();
+            $($(".real-test>div")[a]).css("display","block").siblings("div").css("display","none");
+            for (var i = 0; i < 6; i++) {
+               $($(".real-test>div")[i]).find(".pageGro ul").html("");
+            };
+            if (a==0) {
+                changePage(5,".notice",".notice-close");
+            }else if (a==1) {
+                changePage(2,".group",".group-close");
+            }else if (a==2) {
+                changePage(1,".vehicle");
+            }else if (a==3) {
+                changePage(2,".schoolbus",".schoolbus-close");
+            }else if (a==4) {
+                changePage(2,".domitory",".domitory-close");
+            }else {
+                changePage(2,".life",".life-close");
+            }
+        })
+        $(".real").find(".p1 span").click(function(){
+            $(this).addClass("hover").siblings().removeClass("hover");
+            var a = $(this).index();
+            $($(".real>div")[a]).css("display","block").siblings("div").css("display","none");
+            for (var i = 0; i < 7; i++) {
+               $($(".real-test>div")[i]).find(".pageGro ul").html("");
+            };
+            if (a==0) {
+                changePage(2,".league",".league-close");
+            }else if (a==1) {
+                changePage(3,".community",".community-close");
+            }else if (a==2) {
+                changePage(2,".science",".science-close");
+            }else if (a==3) {
+                changePage(1,".united");
+            }else if (a==4) {
+                changePage(2,".young",".young-close");
+            }else if (a==5) {
+                changePage(1,".arts");
+            }else {
+                changePage(2,".social",".social-close");
+            }
+        })       
+        $(".cqupt_mapcontent h1 span:eq(0)").click();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+.info {
+    width: 921px;
+    height: 593px;
+    background: url("../images/info_bg.png");
+    border: 0;
+}
+.schoolmap.info p.p1 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 0;
+	/*text-align: center;*/
+}
+.p2 {
+	font-size: 16px;
+	color: #6c1815;
+	line-height: 37px;
+}
+.p3 {
+	color: #6c1815;
+	line-height: 34px;
+}
+.p4 {
+	margin-top: 34px;
+}
+.p3-second {
+	padding-top: 2px;
+}
+.p3-center {
+	text-align: center;
+}
+/*.p3-third {
+	padding-top: 1px;
+}*/
+.hover {
+	color: #fff!important;
+	background: #ff6f30;
+	border-radius: 9px;
+}
+.notice-info2, .notice-info3, .notice-info4 {
+	display: none;
+}
+/*.new-group-all {
+	margin-left: 55px;
+}*/
+.group-first, .group-second, .group-third {
+	margin-left: 55px;
+	font-size: 14px;
+	color: #6c1815;
+	overflow: hidden;
+}
+.group-first>div {
+	float: left;
+}
+.group-second>div {
+	float: left;
+}
+.group-third>div {
+	float: left;
+}
+.group-info1 {
+	display: none;
+}
+.department1 {
+	width: 254px;
+}
+.department2 {
+	width: 300px;
+}
+.notice-info4 {
+	width: 921px;
+	height: 498px;
+	overflow: auto;
+}
+.vehicle-span1 {
+	font-size: 16px!important;
+	font-weight: bold;
+}
+.vehicle-span2 {
+	font-size: 14px!important;
+}
+.vehicle-info1 {
+	margin-left: 55px;
+}
+.schoolbus-info {
+	margin-left: 55px;
+}
+.schoolbus-info1 {
+	display: none;
+}
+.domitory-info1, .life-info1, .notice-info1 {
+	display: none;
+}
+.league-info1, .community-info1, .community-info2 {
+	display: none;
+}
+.science-info1, .young-info1, .social-info1 {
+	display: none;
+}
+.domitory-info, .domitory-info1 {
+	margin-left: 55px;
+}
+.life-info, .life-info1 {
+	margin-left: 55px;
+}
+.schoolbus-info1 img{
+	width: 921px;
+	height: 545px;
+}
+.schoolmap.info .p1>span {
+	display: inline-block;
+	padding: 0 8px;
+	height: 35px;
+	font-size: 18px;
+	line-height: 35px;
+	color: #ff6f30;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	border-radius: 9px;
+}
+.organization-btn1 {
+	margin-left: 39px;
+}
+.organization-btn {
+	margin-left: 16px;
+}
+.first-btn {
+	margin-left: 100px;
+}
+.info-btn {
+	margin-left: 30px;
+}
+.special {
+	width: 64px!important;
+}
+.info-div1 {
+	position: relative;
+	width: 921px;
+	height: 545px;
+	display: none;
+}
+.new-group-all {
+	color: #6c1815;
+	font-size: 16px;
+}
+.to-right {
+	margin-left: 55px;
+}
+.pageGro { 
+	position: absolute;
+	bottom: 9px;
+	width: 400px; 
+	height: 25px; 
+	margin: 0px auto; 
+	padding-top: 30px;
+	margin-left: 36%;
+}
+.pageList {
+	margin-left: 10px;
+}
+.pageList ul {
+	padding: 0;
+	margin: 0;
+}
+.pageGro div {
+	float: left;
+	line-height: 25px;
+}
+.pageGro div ul li {
+    float: left;  
+	font-size: 16px;  
+	line-height: 25px; 
+	margin-left: 10px;
+}
+.pageGro div ul li { 
+	list-style: none;
+	width: 26px; 
+	color: #fff;
+	text-align: center; 
+	background: #ff6f30;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.pageGro div ul li.on { 
+	list-style: none;
+	background: #64c8b8;
+	cursor: pointer;
+}
+.pageGro .pageUp,.pageGro .pageDown { 
+	width: 26px; 
+	height: 25px;
+	cursor: pointer;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+}
+.pageGro .pageUp { 
+	background: url("../images/info_left.png") 50% 50% no-repeat;	
+}
+.pageGro .pageDown { 
+	margin-left: 20px;
+	background: url("../images/info_right.png") 50% 50% no-repeat;
+}

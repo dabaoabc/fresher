@@ -1,0 +1,101 @@
+.header{
+    position: fixed;
+}
+.map_content{
+    width: 100%;
+    height: 1306px;
+    margin: 0 auto;
+    background: url("../images/map_bg.jpg");
+    background-position-x:center;
+    position: relative;
+    top: 60px;
+}
+.banner_map{
+    text-align: center;
+}
+.banner_map img{
+   margin-top: 25px;
+}
+.cqupt_map{
+    margin-top: 90px;
+    position: relative;
+}
+.cqupt_mapcontent{
+    margin-top: 20px;
+    width: 999px;
+    height: 725px;
+    background: url("../images/cqupt_mapcontent.png") center no-repeat;
+}
+h1{
+    font-size: 20px;
+    color: #ff6f30;
+}
+h1 span{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    cursor: pointer;
+    /*padding: 10px 5px;*/
+    background: url("../images/btn_bg1.png");
+}
+.span_bg{
+    background: url("../images/btn_bg.png");
+    color: #ffffff;
+}
+.schoolmap{
+    width: 925px;
+    height: 600px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+}
+#drag{
+    width: 2850px;
+    height: 2225px;
+    cursor: move;
+    background: url("../images/cqupt_map.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.small_map{
+    position: absolute;
+    border: 3px solid #b2aa7f;
+    background: url("../images/map_small_shadow.png");
+    width: 165px;
+    height: 129px;
+    bottom: 0;
+    right: 0;
+}
+.schoolSmall{
+    width: 74px;
+    height: 48px;
+    border: 1px solid #ff6520;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+#small_drag{
+    position: absolute;
+    cursor: move;
+    width: 165px;
+    height: 129px;
+    background: url("../images/map_small.png");
+    left: 0;
+    top: 0;
+}
+
+.real{
+    display: none;
+    background: #eee;
+}
+#footer{
+    width: 100%;
+    margin: 60px 0 0 0;
+
+}
